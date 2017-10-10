@@ -1,0 +1,21 @@
+/* Filename: CreateShapes.java 
+ * Created by: Shuaiqi Xia, cs8a3 and Tony Xia, cs8a4
+ * Date: 
+*/
+import java.awt.*;
+
+public class CreateShapes {
+    //The line below is magic, you don't have to understand it (yet)
+    public static void main (String[] args)  { 
+        //Put all your commands to call drawShape 4 times on 4 different turtle objects 
+        //Then REMOVE THIS COMMENT. 
+      
+      World w = new World();
+      Turtle jose = new Turtle(w); //Creates a turtle  
+      Turtle franklin = new Turtle(w); //Creates a turtle  
+      
+      jose.drawShape(60);
+      franklin.drawShape(30);
+    } 
+}
+

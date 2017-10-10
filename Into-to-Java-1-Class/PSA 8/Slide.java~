@@ -1,0 +1,42 @@
+class Slide{
+  
+public Picture pic;
+public Sound sound;
+
+public Slide() 
+{ pic = null;
+  sound = null;
+}
+public Slide(Picture inPic, Sound inSound) 
+{ pic = new Picture(inPic);
+  sound = new Sound(inSound);
+}
+public void changePic(Picture inPic) 
+{ pic = new Picture(inPic);
+}
+public void changeSound(Sound inSound)
+{ sound = new Sound( inSound) ;
+}
+public void showSlide(boolean pictureFlipHorizontal, boolean soundReverse)
+  
+{ if (pic == null || sound == null )
+  { System.out.println (" error");
+    return;
+  }
+ Picture copy = new Picture(pic);
+ if( pictureFlipHorizontal)
+ { copy.flipHorizontal(); }
+ else
+ { copy.flipVertical(); }
+ if ( soundReverse)
+  {sound = sound.reverseSound(); }
+ copy.show();
+ sound.blockingPlay();
+ copy.hide();
+}
+
+}
+ 
+ 
+                          
+  

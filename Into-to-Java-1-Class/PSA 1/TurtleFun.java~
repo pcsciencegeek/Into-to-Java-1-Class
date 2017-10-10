@@ -1,0 +1,13 @@
+/* Filename: TurtleFun.java 
+ * Created by: Drew Mills, cs8abaf and Adrian Anderson, cs8afanc 
+ * Date: 10/5/16
+ */ 
+import java.awt.*;
+
+public class TurtleFun {
+  //The line below is magic, you don't have to understand it (yet)
+  public static void main (String[] args) { 
+    //Put all your commands to draw three separate shapes
+    //Then REMOVE THIS COMMENT. 
+  } 
+}
